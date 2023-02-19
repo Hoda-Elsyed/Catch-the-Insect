@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'); 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #516dFF;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    transition: 0.5s;
+}
+.btn{
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0;
+    color: #4168FF;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+@media (max-width: 500px) {
+    ul{flex-direction: column;}
+    
+}
+
+li span{
+    display: block;
+    margin-top: 0.5rem;
+}
+img{
+    width: 100px;
+    object-fit: contain;
+    transition: 0.4s;
+}
+h1{
+    line-height: 1.4;
+}
+li{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+li:hover{
+    background-color: white;
+    color: #4168FF;
+}
+li:active{
+    background-color: #ffffffa3;
+}
+.header{
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+ 
+}
+.play-area{
+    height: calc(100vh - 75px);
+    width: 100vw;
+    position: relative;
+}
+.container.show{
+    margin-top: -100vh;
+}
+.message{
+    background-color: rgba(0, 0, 0, 0.429);
+    width: 100%;
+    padding: 0.5rem;
+    transform: translate(100%);
+    transition: 0.5s ease-in-out;
+}
+.insect{
+    position: absolute;
+    cursor: pointer;
+    transition:  0.4s;
+}
+.caught{
+    scale: 0%;
+}
